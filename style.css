@@ -90,8 +90,31 @@ body{
     grid-area: body;
     padding: 8px;
     background-color: gainsboro;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
 }
 
 ul{
     list-style: none;
+}
+
+.projects-title{
+    font-size: large;
+    font-weight: 900;
+}
+
+.project-cards{
+    display: grid;
+    gap: min(12px);
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.project-cards>li{
+    background-color: aliceblue;
+    border-left: 1rem solid gold;
+    padding: 1rem;
+}
+
+.card-title{
+    font-weight: 900;
 }
