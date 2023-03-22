@@ -40,7 +40,29 @@ body{
     display: grid;
     grid-template: 1fr / 1fr 1fr 1fr;
     gap: 8px;
-    align-items: center;
+    align-items: bottom;
+    justify-content: right;
+}
+
+.header-bottom-right > button{
+    background-color: dodgerblue;
+    color: aliceblue;
+    padding: min(8px);
+    border-radius: min(24px);
+}
+
+.header-bottom-left{
+    display: grid;
+    grid-template: 1fr / 1fr 6fr;
+}
+
+.greeting{
+    display: grid;
+    padding-left: min(8px);
+}
+
+.username-large{
+    font-size: x-large;
 }
 
 .sidebar{
