@@ -86,6 +86,11 @@ body{
     gap: 8px;
 }
 
+.sidebar>ul>li{
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+}
+
 .body{
     grid-area: body;
     padding: 8px;
@@ -117,4 +122,25 @@ ul{
 
 .card-title{
     font-weight: 900;
+}
+
+.announcements-title{
+    font-size: larger;
+    font-weight: 900;
+}
+
+.announcements-cards-title{
+    font-size: large;
+    font-weight: 900;
+}
+
+.announcements-cards{
+    display: grid;
+    gap: min(12px);
+    grid-template: 1fr 1fr 1fr / 1fr;
+}
+
+.announcements-cards>li{
+    background-color: aliceblue;
+    padding: 1rem;
 }
