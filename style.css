@@ -125,6 +125,7 @@ body{
     background-color: gainsboro;
     display: grid;
     grid-template: 1fr / 3fr 1fr;
+    gap: min(8px);
 }
 
 ul{
@@ -144,6 +145,8 @@ ul{
 }
 
 .project-cards>li{
+    display: grid;
+    grid-template: 1fr 8 1fr / 1fr;
     background-color: aliceblue;
     border-left: 1rem solid gold;
     padding: 1rem;
@@ -151,6 +154,13 @@ ul{
 
 .card-title{
     font-weight: 900;
+}
+
+.card-options{
+    display: grid;
+    grid-template: 1fr / 5fr 1fr 1fr 1fr;
+    align-items: baseline;
+    justify-content: baseline;
 }
 
 .announcements-title{
