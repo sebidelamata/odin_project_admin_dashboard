@@ -17,7 +17,7 @@ body{
     padding: 8px;
     justify-content: bottom;
     align-items: bottom;
-    box-shadow: 0px -5px 5px 0px #888888;
+    box-shadow: 0px -5px 30px 0px #888888;
     position: relative;
 }
 
@@ -83,7 +83,8 @@ input[type=text]{
     padding: minmax(8px, 14px);
     border-radius: min(24px);
     align-content: right;
-    max-height: 36px;
+    max-height: 48px;
+    min-height: 36px;
 }
 
 .header-bottom-left{
@@ -226,13 +227,13 @@ ul{
     grid-template: 1fr 1fr 1fr / auto-fill;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px -5px 5px 0px #888888;
-    position: relative;
 }
 
 .announcements-cards>li{
     background-color: aliceblue;
     padding: 1rem;
+    box-shadow: 0px -5px 5px 0px #888888;
+    position: relative;
 
 }
 
@@ -258,6 +259,8 @@ ul{
     grid-template: 1fr / 1fr 1fr;
     padding: 1rem;
     background-color: aliceblue;
+    box-shadow: 0px -5px 5px 0px #888888;
+    position: relative;
 }
 
 .trending-cards-icon>img{
