@@ -17,6 +17,8 @@ body{
     padding: 8px;
     justify-content: bottom;
     align-items: bottom;
+    box-shadow: 0px -5px 5px 0px #888888;
+    position: relative;
 }
 
 .header-top{
@@ -24,12 +26,27 @@ body{
     grid-template: 1fr / 4fr 2fr;
 }
 
+.header-top-left{
+    display: grid;
+    grid-template: 1fr / 1fr 19fr;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text]{
+    background-color: lightgray;
+    width: 80%;
+    border-radius: min(16px);
+    border-width: 0px;
+    min-height: 24px;
+}
+
 .header-top-right{
     display: grid;
     justify-content: right;
-    align-items: top;
-    grid-template: 1fr / 3fr 1fr 1fr 4fr 1fr;
-    gap: min(4px);
+    align-items: center;
+    grid-template: 1fr / 6fr 2fr 2fr 8fr 1fr;
+    gap: min(24px);
 }
 
 .notification-icon{
@@ -97,7 +114,7 @@ body{
     background-color: dodgerblue;
     color: aliceblue;
     display: grid;
-    grid-template: 1fr auto-fill auto-fill 1fr / 1fr;
+    grid-template: 1fr 1fr 1fr 4fr / 1fr;
     grid-area: sidebar;
     padding: 8px;
     font-weight: 900;
@@ -105,6 +122,34 @@ body{
 
 .sidebar-header{
     font-size: 180%;
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+}
+
+.sidebar-squares{
+    display: grid;
+    gap: min(4px);
+    grid-template: 1fr / 1fr 1fr;
+    max-height: 24px;
+    max-width: 24px;
+    min-height: 8px;
+    min-width: 8px;
+}
+
+.squares-left-side{
+    display: grid;
+    gap: min(4px);
+    grid-template: 2fr 1fr / 1fr ;
+}
+
+.squares-right-side{
+    display: grid;
+    gap: min(4px);
+    grid-template: 1fr 2fr / 1fr ;
+}
+
+.squares{
+    background-color: aliceblue;
 }
 
 .sidebar>ul{
@@ -146,10 +191,12 @@ ul{
 
 .project-cards>li{
     display: grid;
-    grid-template: 1fr 8 1fr / 1fr;
+    grid-template: 1fr 1fr / 1fr;
     background-color: aliceblue;
     border-left: 1rem solid gold;
     padding: 1rem;
+    box-shadow: 0px -5px 5px 0px #888888;
+    position: relative;
 }
 
 .card-title{
@@ -177,11 +224,16 @@ ul{
     display: grid;
     gap: min(12px);
     grid-template: 1fr 1fr 1fr / auto-fill;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -5px 5px 0px #888888;
+    position: relative;
 }
 
 .announcements-cards>li{
     background-color: aliceblue;
     padding: 1rem;
+
 }
 
 .trending-title{
